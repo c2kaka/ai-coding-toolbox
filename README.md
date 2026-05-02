@@ -12,17 +12,18 @@
 
 ```
 ai-coding-toolbox/
-├── README.md                 # 本说明
+├── README.md                       # 本说明
 ├── meta/
-│   └── constitution/         # 跨项目行为准则 / 与 CLAUDE.md 等合并使用
+│   └── constitution/
 │       └── claude.md
-└── (planned)                 # 可按需新增，无需一次到位
-    ├── rules/                # Cursor / 通用规则片段
-    ├── skills/               # SKILL 规格与示例
-    └── workflows/            # 流程说明与检查清单
+├── skills/
+│   └── youtube-to-article/         # YouTube 字幕 → 清洗 → 中文文章改写流程
+└── (可按需新增)
+    ├── rules/
+    └── workflows/
 ```
 
-后续若增加 `rules/`、`skills/`、`workflows/`，在 README 的「当前布局」中补一行即可。
+后续若增加 `rules/`、`workflows/` 等顶层目录，在 README 本段补全即可。
 
 ## 快速使用
 
@@ -33,7 +34,7 @@ ai-coding-toolbox/
    若本仓库提供可复制规则文件，在目标项目中放到 `.cursor/rules/`（或 Cursor 设置中引用的路径），并按项目需要删减。
 
 3. **技能与工作流**  
-   以各目录下的 `SKILL.md` 或流程文档为准；安装方式遵循 [Cursor Agent Skills](https://cursor.com/docs) 或团队内部约定（例如 `~/.cursor/skills-cursor/`）。
+   以各目录下的 `SKILL.md` 或流程文档为准。安装方式遵循 [Cursor Agent Skills](https://cursor.com/docs)：可将例如 `skills/youtube-to-article/` **复制或链接**到目标项目的 `.cursor/skills/youtube-to-article/`，与个人目录 `~/.cursor/skills/` 二选一亦可。
 
 ## 贡献与约定
 
